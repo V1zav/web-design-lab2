@@ -1,0 +1,22 @@
+body {
+    overflow: hidden;
+}
+.background-css {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    z-index: -1;
+    height: 300%;
+    width: 300%;
+    background: url(background.gif) ;
+    background-size: 3%;
+    animation: background-css 2s linear infinite alternate;
+}
+@keyframes background-css {
+    0% {
+            transform: translateY(-40px)
+    }
+    100% {
+        transform: translateX(-80px)
+    }
+}

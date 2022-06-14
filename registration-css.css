@@ -1,0 +1,101 @@
+body {
+    overflow: hidden;
+    height: 100%;
+    margin: 0;
+    font-size: 20px;
+    text-align: center;
+    text-shadow: 1px 1px 3px aquamarine, -1px -1px 3px red;
+}
+ul{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    list-style: none;
+}
+ul li{
+    list-style-type: none;
+}
+ul li a{
+    text-decoration: none;
+    font-size: 1.5em;
+}
+ul li a:hover{
+    color: white;
+}
+.current{
+    color: red;
+}
+h1 {
+    margin: 0px;
+    padding: 0px;
+}
+h2 {
+    padding-top:10vh;
+    margin: auto;
+}
+button {
+    margin-top: 20px;
+    font-size: 20px;
+    text-shadow: 1px 1px 3px aquamarine, -1px -1px 3px red;
+    background: transparent;
+}
+
+option {
+    background: transparent;
+}
+
+input {
+    font-size: 20px;
+    background: transparent;
+    box-shadow: 1px 1px 1px aquamarine;
+    text-shadow: 1px 1px 1px aquamarine, -1px -1px 1px red;
+}
+
+select {
+    font-size: 20px;
+    text-shadow: 1px 1px 3px aquamarine, -1px -1px 3px red;
+    background: transparent;
+}
+
+.background-css {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    z-index: -1;
+    height: calc(100% + 100px);
+    width: calc(100% + 200px);
+    background: url(background.gif) ;
+        
+    animation: background-css 5s linear infinite alternate;
+}
+@keyframes background-css {
+    0% {
+        transform: translateY(-100px)
+    }
+    100% {
+        transform: translateX(-200px)
+    }
+}
+@media screen and (max-width: 700px){
+    .background-css {
+        width: 400%;
+    }
+    ul li a{
+        text-decoration: none;
+        font-size: 1em;
+    }
+}
+@media screen and (max-height: 450px) {
+    .background-css {
+        height: 400%;
+    }
+    body {
+        height: 100%;
+    }
+    button {
+        margin-top: 12px;
+    }
+    body, input, select, button {
+        font-size: 12px;
+    }  
+}

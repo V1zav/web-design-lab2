@@ -1,0 +1,36 @@
+<!Doctype html>
+<html>
+    <head>
+        <title>Sign-In</title>
+        <link rel="icon" type="image/x-icon" href="favicon.jpg">
+        <link rel ="stylesheet" href="signin-css.css">
+        <link rel="stylesheet" type="text/css" href="bootstrap.min.css">
+    </head>
+
+    <body>
+        <header>
+            <ul class="nav">
+                <li><a href="about.html">About</a></li>
+                <li><a href="application.html">RikkaRun</a></li>
+                <li><a href="profile.html">Profile</a></li>
+                <li><a href="#" class="current">Sign In</a></li>
+                <li><a href="registration.html">Registration</a></li>
+            </ul>
+        </header>
+        <main>
+        <h1>Sign-In</h1>
+        <form action="action_page.php" autocomplete="off" method="get" target="_blank">
+                <legend>
+                    Вхід до сайту:
+                </legend>
+                <label for="email">Email:</label><br>
+                <input type="email" id="email" name="email" required maxlength="30" autocomplete="on" placeholder="myemail@example.com"><br>
+                <label for="password">Password:</label><br>
+                <input type="password" id="password" name="password" required maxlength="30" placeholder="your password"><br>
+            <button type="submit">Ввійти</button>
+         </form>
+         <div class ="background-css"></div>
+         </main>
+    </body>
+    <script type="javascript" src="bootstrap.bundle.min.js"></script>
+</html>

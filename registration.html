@@ -1,0 +1,45 @@
+<!Doctype html>
+<html>
+    <head>
+        <title>Registration</title>
+        <link rel="icon" type="image/x-icon" href="favicon.jpg">
+        <link rel ="stylesheet" href="registration-css.css">
+        <link rel="stylesheet" type="text/css" href="bootstrap.min.css">
+    </head>
+
+    <body>
+        <header>
+            <ul class="nav">
+                <li><a href="about.html">About</a></li>
+                <li><a href="application.html">RikkaRun</a></li>
+                <li><a href="profile.html">Profile</a></li>
+                <li><a href="signin.html">Sign In</a></li>
+                <li><a href="#" class="current">Registration</a></li>
+            </ul>
+        </header>
+        <main>
+        <h1>Registration</h1>
+        <form action="action_page.php" autocomplete="off" method="get" target="_blank">
+                <legend>
+                    Персональні дані:
+                </legend>
+                <label for="text">Ім'я:*</label><br>
+                <input type="text" id="firstname" name="firstname" required maxlength="20" autofocus autocomplete="on" placeholder ="Name"><br>
+                <label for="email">Email:</label><br>
+                <input type="email" id="email" name="email" required maxlength="30" autocomplete="on" placeholder="myemail@example.com"><br>
+                <label for="password">Password:</label><br>
+                <input type="password" id="password" name="password" required maxlength="30" placeholder="your password"><br>
+                <label for="sex">Стать:*</label><br>
+                <select name="sex" id="sex">
+                    <option value="v1">Чоловіча</option>
+                    <option value="v2">Жіноча</option>
+                </select><br>                
+                <label for="date">Дата народження</label><br>
+                <input type="date" id="date" name="date"/><br>
+            <button type="submit">Зареєструватись</button>
+         </form>
+         <div class ="background-css"></div>
+         </main>
+    </body>
+    <script type="javascript" src="bootstrap.bundle.min.js"></script>
+</html>
